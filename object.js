@@ -1,10 +1,12 @@
 // crinado as funções para a calculadora
 
 function soma (numumeroOne, numeroTwo){
-    console.log(numumeroOne + numeroTwo)
+   
+   console.log(numumeroOne + numeroTwo)
+
 }
 
-soma(10,5)
+soma(5,5)
 
 function sutracao (numumeroOne, numeroTwo){
     console.log(numumeroOne - numeroTwo)
@@ -23,3 +25,6 @@ function divisao (numumeroOne, numeroTwo){
 }
 
 divisao(10,5)
+
+ 
+
