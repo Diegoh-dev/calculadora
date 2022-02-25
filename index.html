@@ -12,36 +12,37 @@
 <body>
     <h1>calculadora</h1>
     <div class="conteiner">
-        <p>resultado</p>
+        <p id="text-value"></p>
         <table>
             <tr>
-                <button class="reset" type="button">C</button>
+                <td class="direita"> <button id="reset" class="reset" onclick="clean()" type="button">C</button></td>
+                <td class="direita"> <button onclick="insert('/')" id="operador" class="operadores" type="button">/</button> </td>
             </tr>
             <tr>
-                <td> <button class="number" value="7" type="button">7</button> </td>
-                <td> <button class="number" value="8" type="button">8</button> </td>
-                <td> <button class="number" value="9" type="button">9</button> </td>
-                <td> <button class="operadores" type="button">/</button> </td>
-            </tr>
-
-            <tr>
-                <td> <button class="number" value="4" type="button">4</button> </td>
-                <td> <button class="number" value="5" type="button">5</button> </td>
-                <td> <button class="number" value="6" type="button">6</button> </td>
-                <td> <button class="operadores" type="button">-</button> </td>
+                <td> <button onclick="insert(7)" class="number" type="button">7</button> </td>
+                <td> <button onclick="insert(8)" class="number" type="button">8</button> </td>
+                <td> <button onclick="insert(9)" class="number" type="button">9</button> </td>
+                <td> <button onclick="insert('X')" class="operadores" type="button">X</button> </td>
             </tr>
 
             <tr>
-                <td> <button class="number" value="1" type="button">1</button> </td>
-                <td> <button class="number" value="2" type="button">2</button> </td>
-                <td> <button class="number" value="3" type="button">3</button> </td>
-                <td> <button class="operadores" type="button">+</button> </td>
+                <td> <button onclick="insert(4)" class="number" type="button">4</button> </td>
+                <td> <button onclick="insert(5)" class="number" type="button">5</button> </td>
+                <td> <button onclick="insert(6)" class="number" type="button">6</button> </td>
+                <td> <button onclick="insert('-')" class="operadores" type="button">-</button> </td>
             </tr>
 
             <tr>
-                <td colspan="2"> <button id="zero" class="number" value="0" type="button">0</button> </td>
-                <td> <button class="number" type="button">,</button> </td>
-                <td> <button class="operadores" type="button">=</button> </td>
+                <td> <button onclick="insert(1)" class="number" type="button">1</button> </td>
+                <td> <button onclick="insert(2)" class="number" type="button">2</button> </td>
+                <td> <button onclick="insert(3)" class="number" type="button">3</button> </td>
+                <td> <button onclick="insert('+')" class="operadores" type="button">+</button> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> <button onclick="insert(0)" id="zero" class="number" type="button">0</button> </td>
+                <td> <button onclick="insert(',')" class="number" type="button">,</button> </td>
+                <td> <button onclick="calcular()" class="operadores" type="button">=</button> </td>
 
             </tr>
 
@@ -51,4 +52,5 @@
     <!--conteiner-->
 </body>
 <script src="./script/script.js"></script>
+
 </html>
